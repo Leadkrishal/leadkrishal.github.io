@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("IMAGES/profile.png");
+    background-size: contain;     /* Image fits inside without covering whole page */
+    background-position: right;   /* Image stays on the right side */
+    background-repeat: no-repeat; /* No duplicate images */
+    background-color: #000;       /* Black background behind image */
+}
+.container{
+    padding: 20px 60px;   /* pushes the entire header content to the right */
+}
+
+nav ul{
+    margin-left: 40px;    /* optional: adds more space between logo and menu */
+}
+
+.logo {
+    width: 120px;     /* adjust to whatever size you want */
+    height: auto;     /* keeps proportions correct */
+    margin-right: 40px;  /* space between logo and menu */
+    position: static;    /* remove absolute positioning */
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;     /* expands on hover */
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
