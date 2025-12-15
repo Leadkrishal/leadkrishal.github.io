@@ -13,10 +13,10 @@
                 <img src="IMAGES/logo.png" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -27,6 +27,50 @@
         </div>
 
     </div>
+<!--About Section-->
+    <section id="about" class="section about-section">
+    <div class="about-container">
+        <h2>About Me</h2>
+        <p>
+            I’m Krishal Kharbuja, a 4th year Mechanical Engineering student at Pulchowk Campus, IOE learning to build clean,
+            modern websites. Beyond coding, I am a speedcuber and a chess player,
+            which helps me develop problem-solving skills and strategic thinking.
+        </p>
+        <p>
+            I enjoy learning new technologies and continuously improving my skills
+            while working on creative and challenging projects.
+        </p>
+    </div>
+</section>
     
+ <!-- Skills Section -->
+<section id="skills" class="section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>Speedcubing</h3>
+            <p>My personal best 3*3 single is 14.81 s with pb average of 19.91 s.</p>
+        </div>
+        <div class="skill-card">
+            <h3>Chess</h3>
+            <p>I am a 2000 elo rated rapid player at chess.com with the username chessculator98. Add me so we can play a game of chess.</p>
+        </div>
+        <div class="skill-card">
+            <h3>Mechanical Design</h3>
+            <p>I am fluent on Solidworks.</p>
+        </div>
+    </div>
+</section>
+ <section id="Contact" class="section contact-section">
+    <h2>Contact Me</h2>
+    <form>
+        <form action="https://formspree.io/f/myzrakwl" method="POST"></form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+   
+ </section>  
 </body>
 </html>
