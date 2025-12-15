@@ -63,13 +63,21 @@
 </section>
  <section id="Contact" class="section contact-section">
     <h2>Contact Me</h2>
-    <form>
-        <form action="https://formspree.io/f/myzrakwl" method="POST"></form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send</button>
-    </form>
+    <form
+  action="https://formspree.io/f/myzrakwl"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
    
  </section>  
 </body>
